@@ -6,5 +6,5 @@
       "version": "22"
     }
   },
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "bash .devcontainer/setup-android.sh"
 }
