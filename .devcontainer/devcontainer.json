@@ -1,11 +1,10 @@
 {
   "name": "Elisa V1 Codespace",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
-  "postCreateCommand": "npm install",
-  "forwardPorts": [3000],
-  "customizations": {
-    "vscode": {
-      "extensions": ["dbaeumer.vscode-eslint"]
+  "image": "mcr.microsoft.com/devcontainers/java:21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "22"
     }
-  }
+  },
+  "postCreateCommand": "npm install"
 }
